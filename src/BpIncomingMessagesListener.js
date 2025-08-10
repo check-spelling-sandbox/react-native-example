@@ -12,7 +12,7 @@ window.botpressWebChat.onEvent(
 true; // note: this is required, or you'll sometimes get silent failures
 `;
 
-export default function BpIncommingMessagesListener(props) {
+export default function BpIncomingMessagesListener(props) {
   const { botConfig, onMessage } = props;
 
   const { html, baseUrl } = getBotpressWebchat(botConfig, false);

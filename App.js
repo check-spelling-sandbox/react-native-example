@@ -1,6 +1,6 @@
 import { Button, View } from "react-native";
 import BpWidget from "./src/BpWidget";
-import BpIncommingMessagesListener from "./src/BpIncommingMessagesListener";
+import BpIncomingMessagesListener from "./src/BpIncomingMessagesListener";
 import { useRef } from "react";
 
 
@@ -70,7 +70,7 @@ export default function App() {
         />
       </View>
       {/* In case your webchat is not rendered and you want to catch bot messages */}
-      <BpIncommingMessagesListener
+      <BpIncomingMessagesListener
         botConfig={testingConfig}
         onBotMessage={(event) => {
           console.log("bot message", event);

@@ -1,6 +1,6 @@
 # Botpress in React Native
 
-This is a simple example of how to use Botpress in a React Native application. We have two main components: `BpWidget` and `BpIncommingMessagesListener`.
+This is a simple example of how to use Botpress in a React Native application. We have two main components: `BpWidget` and `BpIncomingMessagesListener`.
 
 ## Installation
 
@@ -31,7 +31,7 @@ This component is responsible for rendering the Botpress chat widget in your app
 
 The `BpWidget` component also takes a `onMessage` prop, which is a function that will be called whenever a message is received from the bot.
 
-### BpIncommingMessagesListener
+### BpIncomingMessagesListener
 
 This component listens for incoming messages from the bot and can be used from anywhere in the bot, while hidden away. It takes the same `botConfig` prop as the `BpWidget` component, as well as an `onMessage` prop. The `onMessage` function will be called whenever a message is received from the bot.
 
@@ -41,7 +41,7 @@ In your application, you can use these components as follows:
 
 ```jsx
 import BpWidget from "./src/BpWidget";
-import BpIncommingMessagesListener from "./src/BpIncommingMessagesListener";
+import BpIncomingMessagesListener from "./src/BpIncomingMessagesListener";
 
 const botConfig = {
   botId: "your-bot-id",
@@ -53,7 +53,7 @@ const botConfig = {
 function App() {
   return (
     <View>
-      <BpIncommingMessagesListener 
+      <BpIncomingMessagesListener 
         botConfig={botConfig} 
         onMessage={(message) => console.log('Received message:', message)}
       />
